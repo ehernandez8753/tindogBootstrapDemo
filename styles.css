@@ -17,6 +17,7 @@ h3 {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.5rem;
     font-weight: 900;
+    margin: 0;
 }
 p {
     color: #8f8f8f;
@@ -35,6 +36,17 @@ p {
     transform: rotate(10deg);
     position: absolute;
     width: 20%;
+}
+
+@media (max-width: 1028px) {
+    .title-image {
+        position: static;
+        transform: rotate(0);
+        width: 200px;
+    }
+    .title-text-content {
+        text-align: center;
+    }
 }
 
 /* Navigation Bar */
@@ -121,13 +133,24 @@ p {
     padding: 3% 2%;
 }
 
-@media (max-width: 1028px) {
-    .title-image {
-        position: static;
-        transform: rotate(0);
-        width: 200px;
-    }
-    .title-text-content {
-        text-align: center;
-    }
+/* CTA Section */
+
+#cta {
+    padding: 7% 15%;
+    text-align: center;
+    color: #ffffff;
+    background-color: #ff4c68;
+}
+.cta-button-container {
+    padding-top: 30px;
+}
+
+/* Footer Section */
+
+#footer {
+    padding: 3% 15%;
+    text-align: center;
+}
+.footer-icon {
+    padding: 0 6px 20px 6px;
 }
