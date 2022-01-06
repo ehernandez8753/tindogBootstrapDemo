@@ -22,15 +22,19 @@ p {
     color: #8f8f8f;
 }
 #title {
-
     background-color: #ff4c68;
     color: white;
 }
 .title-container {
-    padding: 1% 15%;
+    padding: 1% 15% 7% 15%;
 }
 .title-text-content {
     padding-top: 7%;
+}
+.title-image {
+    transform: rotate(10deg);
+    position: absolute;
+    width: 20%;
 }
 
 /* Navigation Bar */
@@ -60,16 +64,11 @@ p {
     margin: 5% 3% 5% 0;
 }
 
-/* Title Image */
-
-.title-image {
-    width: 50%;
-    transform: rotate(10deg);
-}
-
 /* Intro Section */
 #features {
     padding: 7% 15%;
+    background-color: #ffffff;
+    position: relative;
 }
 .intro-content {
     text-align: center;
@@ -120,4 +119,15 @@ p {
 }
 .pricing-column{
     padding: 3% 2%;
+}
+
+@media (max-width: 1028px) {
+    .title-image {
+        position: static;
+        transform: rotate(0);
+        width: 200px;
+    }
+    .title-text-content {
+        text-align: center;
+    }
 }
